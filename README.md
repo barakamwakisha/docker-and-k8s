@@ -5,3 +5,4 @@
 3. [Dockerfile Security and Best Practices - Building Secure and Efficient Docker Images](./3-security-and-best-practices.md)
 4. [Building Docker Images](./4-building-docker-images.md)
 5. [Deploying Docker Images to a registry](./5-deploying-to-registry.md)
+6. [Creating a Kubernetes Cluster](./6-creating-a-k8s-cluster.md)

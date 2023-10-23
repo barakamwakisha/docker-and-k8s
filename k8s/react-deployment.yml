@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app     # Name of the Deployment resource
+spec:
+  replicas: 3         # Number of replica Pods to maintain
+  selector:
+    matchLabels:
+      app: react-app   # Label selector for Pods
+  template:
+    metadata:
+      labels:
+        app: react-app # Label for Pods created by this Deployment
+    spec:
+      containers:
+      - name: react-app
+        image: barakamwakisha/react-app:latest  # Docker image to use
+        ports:
+        - containerPort: 80  # Port the container listens on
