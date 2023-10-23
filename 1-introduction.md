@@ -27,3 +27,4 @@
 ## The Journey Begins
 - Docker and Kubernetes are the cornerstones of containerization and orchestration.
 - In this presentation, we will delve into these technologies, learning how to build and deploy containerized applications using Docker and manage them with Kubernetes.
+- Let's start by installing all required tools. [Download Docker Desktop](https://www.docker.com/products/docker-desktop/) and [configure Kubernetes](https://docs.docker.com/desktop/kubernetes/).
