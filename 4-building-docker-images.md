@@ -15,7 +15,7 @@
 - `--build-arg`: Set build-time variables. These variables can be used in the Dockerfile with the `ARG` instruction.
   - Example:
     ```shell
-    docker build --build-arg APP_PORT=5000 -t flask-app-image .
+    docker build --build-arg APP_PORT=5000 -t flask-app .
     ```
 
 ---
@@ -23,7 +23,7 @@
 - `-t`, `--tag`: Assign a name and optionally a tag to the image.
   - Example:
     ```shell
-    docker build -t flask-app-image:1.0 .
+    docker build -t flask-app:1.0 .
     ```
 
 ---
@@ -31,7 +31,7 @@
 - `--file`, `-f`: Specify a different Dockerfile (default is 'Dockerfile').
   - Example:
     ```shell
-    docker build -f Dockerfile.dev -t flask-app-image .
+    docker build -f Dockerfile.dev -t flask-app .
     ```
 
 ---
@@ -39,7 +39,7 @@
 - `--no-cache`: Build the image without using cache. Useful for forcing a full rebuild.
   - Example:
     ```shell
-    docker build --no-cache -t flask-app-image .
+    docker build --no-cache -t flask-app .
     ```
 
 ---
@@ -47,7 +47,7 @@
 - `--rm`: Remove intermediate containers after a successful build to reduce clutter.
   - Example:
     ```shell
-    docker build --rm -t flask-app-image .
+    docker build --rm -t flask-app .
     ```
 
 ---
@@ -55,7 +55,7 @@
 - `--quiet`, `-q`: Suppress the build output and only show the final image ID.
   - Example:
     ```shell
-    docker build -q -t flask-app-image .
+    docker build -q -t flask-app .
     ```
 
 ---
@@ -63,7 +63,7 @@
 - `--force-rm`: Always remove intermediate containers, even if the build fails.
   - Example:
     ```shell
-    docker build --force-rm -t flask-app-image .
+    docker build --force-rm -t flask-app .
     ```
 
 ## Building the Flask App Image
@@ -76,7 +76,7 @@ cd flask-app
 - Use the `docker build` command to build the image.
 
 ```shell
-docker build -t flask-app-image .
+docker build -t flask-app .
 ```
 
 - The `.` specifies the build context.
@@ -87,7 +87,7 @@ docker build -t flask-app-image .
 - Use the `docker build` command with build arguments.
 
 ```shell
-docker build -t react-app-image .
+docker build -t react-app .
 ```
 
 ## Listing & Inspecting Images
@@ -100,5 +100,5 @@ docker images
 - Use the `docker inspect` command to inspect an image.
 
 ```shell
-docker inspect flask-app-image
+docker inspect flask-app
 ```
